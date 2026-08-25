@@ -915,6 +915,7 @@ button {
   overflow: hidden;
 }
 .gallery-tile img,
+.gallery-tile video,
 .gallery-tile .tile-ph {
   width: 100%;
   height: 100%;

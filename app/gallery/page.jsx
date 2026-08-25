@@ -4,43 +4,113 @@ import PagBar from "@/components/PagBar";
 import Reveal from "@/components/Reveal";
 import TransitionLink from "@/components/TransitionLink";
 
-import galleryWhereBegan from "@/assets/galleryWhereBegan.jpg";
-import friendsStory from "@/assets/friendsStory.jpg";
-import proposalStory from "@/assets/proposalStory.jpg";
-import galleryEngagement from "@/assets/galleryEngagement.jpg";
-import galleryFamily from "@/assets/galleryFamily.jpg";
-import traditionalWedding from "@/assets/traditionalWedding.jpg";
+import moments2022 from "@/assets/2022-2.jpeg";
+import graduation1 from "@/assets/2023-Nana-kofi-Master's-graduation-1.jpeg";
+import graduation2 from "@/assets/2023-Nana-kofi-Master's-graduation-2.jpeg";
+import moments2025 from "@/assets/2025-2.jpeg";
+import juliaWedding2 from "@/assets/2026-Julia's-wedding-2.jpeg";
+import juliaWedding3 from "@/assets/2026-Julia's-wedding-3.jpeg";
 
 const PHOTOS = [
   {
-    img: galleryWhereBegan,
-    caption: "Where it all began",
-    sub: "From the very first hello",
+    video: "/gallery-videos/2020-first-visit1.mp4",
+    caption: "Our first visit",
+    sub: "2020",
   },
   {
-    img: friendsStory,
-    caption: "From friends to forever",
-    sub: "Chapter by chapter",
+    video: "/gallery-videos/2020-first-visit2.mp4",
+    caption: "Our first visit",
+    sub: "2020",
   },
   {
-    img: proposalStory,
-    caption: "The proposal",
-    sub: "The question that changed everything",
+    video: "/gallery-videos/2020-first-visit3.mp4",
+    caption: "Our first visit",
+    sub: "2020",
   },
   {
-    img: galleryEngagement,
-    caption: "Engagement shoot",
-    sub: "One day closer to forever",
+    video: "/gallery-videos/2021-the-funeral-anniversary.mp4",
+    caption: "Remembering together",
+    sub: "2021 — the funeral anniversary",
   },
   {
-    img: galleryFamily,
-    caption: "Family celebrations",
-    sub: "Surrounded by love",
+    video: "/gallery-videos/2022-1.mp4",
+    caption: "Moments from 2022",
+    sub: "2022",
   },
   {
-    img: traditionalWedding,
-    caption: "Getting ready",
-    sub: "The calm before the aisle",
+    img: moments2022,
+    caption: "Moments from 2022",
+    sub: "2022",
+  },
+  {
+    img: graduation1,
+    caption: "Nana Kofi's graduation",
+    sub: "2023 — celebrating his Master's",
+  },
+  {
+    img: graduation2,
+    caption: "Nana Kofi's graduation",
+    sub: "2023 — celebrating his Master's",
+  },
+  {
+    video: "/gallery-videos/2023-Nana-kofi-Masters-graduation-3.mp4",
+    caption: "Nana Kofi's graduation",
+    sub: "2023 — celebrating his Master's",
+  },
+  {
+    video: "/gallery-videos/2023-Nana-kofi-Masters-graduation-4.mp4",
+    caption: "Nana Kofi's graduation",
+    sub: "2023 — celebrating his Master's",
+  },
+  {
+    video: "/gallery-videos/2024-Easter-together-1.mp4",
+    caption: "Easter together",
+    sub: "2024",
+  },
+  {
+    video: "/gallery-videos/2024-Easter-together-2.mp4",
+    caption: "Easter together",
+    sub: "2024",
+  },
+  {
+    video: "/gallery-videos/2024-Easter-together-3.mp4",
+    caption: "Easter together",
+    sub: "2024",
+  },
+  {
+    video: "/gallery-videos/2024-Easter-together-4.mp4",
+    caption: "Easter together",
+    sub: "2024",
+  },
+  {
+    video: "/gallery-videos/2024-Easter-together-5.mp4",
+    caption: "Easter together",
+    sub: "2024",
+  },
+  {
+    video: "/gallery-videos/2025-1.mp4",
+    caption: "Moments from 2025",
+    sub: "2025",
+  },
+  {
+    img: moments2025,
+    caption: "Moments from 2025",
+    sub: "2025",
+  },
+  {
+    video: "/gallery-videos/2026-Julias-wedding-1.mp4",
+    caption: "Julia's wedding",
+    sub: "2026",
+  },
+  {
+    img: juliaWedding2,
+    caption: "Julia's wedding",
+    sub: "2026",
+  },
+  {
+    img: juliaWedding3,
+    caption: "Julia's wedding",
+    sub: "2026",
   },
 ];
 
@@ -63,10 +133,12 @@ export default function GalleryPage() {
               as="div"
               delay={(i % 3) * 0.08}
               className="gallery-item"
-              key={p.caption}
+              key={`${p.caption}-${i}`}
             >
               <div className="gallery-tile" style={{ position: "relative" }}>
-                {p.img ? (
+                {p.video ? (
+                  <video src={p.video} muted controls playsInline />
+                ) : p.img ? (
                   <Image
                     src={p.img}
                     alt={p.caption}
