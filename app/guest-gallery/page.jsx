@@ -7,8 +7,6 @@ import Reveal from "@/components/Reveal";
 import TransitionLink from "@/components/TransitionLink";
 import PhotoUpload from "@/components/PhotoUpload";
 
-const ACCESS_CODE = "OURDAY";
-
 const PERKS = [
   "Snap photos or choose from your library",
   "Up to 10 photos per guest",
@@ -18,18 +16,11 @@ const PERKS = [
 export default function GuestGalleryPage() {
   const [unlocked, setUnlocked] = useState(false);
   const [name, setName] = useState("");
-  const [code, setCode] = useState("");
-  const [error, setError] = useState("");
   const [sharedPhotos, setSharedPhotos] = useState([]);
   const [loadingShared, setLoadingShared] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (code.trim().toUpperCase() !== ACCESS_CODE) {
-      setError("That code doesn't match — check the card at the venue.");
-      return;
-    }
-    setError("");
     setUnlocked(true);
   }
 
@@ -86,7 +77,7 @@ export default function GuestGalleryPage() {
             </Reveal>
 
             <Reveal as="p" delay={0.22} className="guest-gate-hint">
-              Enter the access code displayed at the venue to get started
+              Let us know who you are, then dive in
             </Reveal>
 
             <Reveal
@@ -102,17 +93,6 @@ export default function GuestGalleryPage() {
                 onChange={(e) => setName(e.target.value)}
                 className="guest-input"
               />
-              <input
-                type="text"
-                placeholder="ACCESS CODE"
-                value={code}
-                onChange={(e) => {
-                  setCode(e.target.value);
-                  if (error) setError("");
-                }}
-                className="guest-input guest-input-code"
-              />
-              {error && <div className="guest-gate-error">{error}</div>}
               <button type="submit" className="guest-enter-btn">
                 ENTER GALLERY
               </button>
