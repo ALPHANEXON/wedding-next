@@ -1,7 +1,7 @@
 import Image from "next/image";
 import TransitionLink from "@/components/TransitionLink";
 import Reveal from "@/components/Reveal";
-import couple from "@/assets/couple.jpg";
+import couple from "@/assets/cover.png";
 
 export default function CoverPage() {
   return (

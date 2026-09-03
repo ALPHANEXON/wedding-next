@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 const VENDOR_CATEGORIES = [
   {
     category: "Coordinator",
-    people: [{ name: "Events by Pinkies", phone: "0244370449" }],
+    people: [{ name: "Events by Pinkies", phone: "0244370449", ig: "eventsbypinkies10" }],
   },
   {
     category: "Planners",
@@ -45,6 +45,10 @@ const VENDOR_CATEGORIES = [
     ],
   },
   {
+    category: "Bride's Hair Bundles",
+    people: [{ name: "F Q Hair", phone: "0257442085", ig: "fqhair" }],
+  },
+  {
     category: "Bridesmaids' Dress",
     people: [{ name: "Unikay", phone: "0247538360", ig: "_unikay" }],
   },
@@ -77,6 +81,22 @@ const VENDOR_CATEGORIES = [
     people: [
       { name: "Creamy Haven by Benny", phone: "0550931509", ig: "creamy__haven" },
     ],
+  },
+  {
+    category: "Couples Photoshoot Location",
+    people: [{ name: "The Swaggart Signature Hotel, Kumasi" }],
+  },
+  {
+    category: "Bride's Photoshoot Makeup",
+    people: [{ name: "Ansas Makeup", phone: "0244841079", ig: "ansas_makeup" }],
+  },
+  {
+    category: "Bride's Photoshoot Black Outfit",
+    people: [{ name: "GoodMay Closet", ig: "goodmaydetails" }],
+  },
+  {
+    category: "Bride's Photoshoot White Outfit",
+    people: [{ name: "Lynden Mode", phone: "0242736011", ig: "lynden_mode" }],
   },
 ];
 
