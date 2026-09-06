@@ -11,6 +11,46 @@ import moments2025 from "@/assets/2025-2.jpeg";
 import juliaWedding2 from "@/assets/2026-Julia's-wedding-2.jpeg";
 import juliaWedding3 from "@/assets/2026-Julia's-wedding-3.jpeg";
 
+import prewedding01 from "@/assets/wede/prewedding-01.jpeg";
+import prewedding02 from "@/assets/wede/prewedding-02.jpeg";
+import prewedding03 from "@/assets/wede/prewedding-03.jpeg";
+import prewedding04 from "@/assets/wede/prewedding-04.jpeg";
+import prewedding05 from "@/assets/wede/prewedding-05.jpeg";
+import prewedding06 from "@/assets/wede/prewedding-06.jpeg";
+import prewedding07 from "@/assets/wede/prewedding-07.jpeg";
+import prewedding08 from "@/assets/wede/prewedding-08.jpeg";
+import prewedding09 from "@/assets/wede/prewedding-09.jpeg";
+import prewedding10 from "@/assets/wede/prewedding-10.jpeg";
+import prewedding11 from "@/assets/wede/prewedding-11.jpeg";
+import prewedding12 from "@/assets/wede/prewedding-12.jpeg";
+import prewedding13 from "@/assets/wede/prewedding-13.jpeg";
+import prewedding14 from "@/assets/wede/prewedding-14.jpeg";
+import prewedding15 from "@/assets/wede/prewedding-15.jpeg";
+import prewedding16 from "@/assets/wede/prewedding-16.jpeg";
+import prewedding17 from "@/assets/wede/prewedding-17.jpeg";
+import prewedding18 from "@/assets/wede/prewedding-18.jpeg";
+
+const PREWEDDING_PHOTOS = [
+  prewedding01,
+  prewedding02,
+  prewedding03,
+  prewedding04,
+  prewedding05,
+  prewedding06,
+  prewedding07,
+  prewedding08,
+  prewedding09,
+  prewedding10,
+  prewedding11,
+  prewedding12,
+  prewedding13,
+  prewedding14,
+  prewedding15,
+  prewedding16,
+  prewedding17,
+  prewedding18,
+];
+
 const PHOTOS = [
   {
     video: "/gallery-videos/2020-first-visit1.mp4",
@@ -79,13 +119,13 @@ const PHOTOS = [
   },
   {
     video: "/gallery-videos/2024-Easter-together-4.mp4",
-    caption: "Easter together",
-    sub: "2024",
+    caption: "Moments from 2025",
+    sub: "2025",
   },
   {
     video: "/gallery-videos/2024-Easter-together-5.mp4",
-    caption: "Easter together",
-    sub: "2024",
+    caption: "Moments from 2025",
+    sub: "2025",
   },
   {
     video: "/gallery-videos/2025-1.mp4",
@@ -112,6 +152,11 @@ const PHOTOS = [
     caption: "Julia's wedding",
     sub: "2026",
   },
+  ...PREWEDDING_PHOTOS.map((img) => ({
+    img,
+    caption: "Our pre-wedding photoshoot",
+    sub: "2026",
+  })),
 ];
 
 export default function GalleryPage() {

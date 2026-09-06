@@ -64,7 +64,10 @@ const VENDOR_CATEGORIES = [
   },
   {
     category: "Catering",
-    people: [{ name: "Elohim Catering Services" }],
+    people: [
+      { name: "Elohim Catering Services", phone: "0559054095" },
+      { name: "Kitchen Masters", phone: "0243384906" },
+    ],
   },
   {
     category: "Sound",
