@@ -7,7 +7,7 @@ import PagBar from "@/components/PagBar";
 import Reveal from "@/components/Reveal";
 import ScrollRail from "@/components/ScrollRail";
 import Countdown from "@/components/Countdown";
-import traditionalWedding from "@/assets/traditionalWedding.jpg";
+import traditionalWedding from "@/assets/traditionalWedding-kente.png";
 import whiteWedding from "@/assets/whiteWedding.jpeg";
 
 const EVENTS = [
@@ -34,7 +34,11 @@ const EVENTS = [
         "Presbyterian Church of Ghana",
         "Kaneshie Congregation, Kaneshie, Accra",
       ],
-      ["DRESS CODE", "[Formal / cocktail attire]", "[Colors to avoid, if any]"],
+      [
+        "DRESS CODE",
+        "Formal / cocktail attire",
+        "Gentlemen, please avoid tan, blue, and black suits. Ladies can wear anything but white.",
+      ],
     ],
     actions: [{ label: "DOWNLOAD PROGRAMME", href: "#", filled: true }],
     ph: "tph-5",
