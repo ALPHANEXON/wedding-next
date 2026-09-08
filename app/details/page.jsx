@@ -8,7 +8,7 @@ import Reveal from "@/components/Reveal";
 import ScrollRail from "@/components/ScrollRail";
 import Countdown from "@/components/Countdown";
 import traditionalWedding from "@/assets/traditionalWedding-kente.png";
-import whiteWedding from "@/assets/whiteWedding.jpeg";
+import whiteWedding from "@/assets/wede/prewedding-01.jpeg";
 
 const EVENTS = [
   {
