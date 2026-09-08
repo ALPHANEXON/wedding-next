@@ -6,8 +6,6 @@ import ChapterHero from "@/components/ChapterHero";
 import PagBar from "@/components/PagBar";
 import Reveal from "@/components/Reveal";
 import ScrollRail from "@/components/ScrollRail";
-import meetingInPerson from "@/assets/2025-2.jpeg";
-import losingTouch from "@/assets/2026-Julia's-wedding-2.jpeg";
 import firstMessages from "@/assets/firstMessages.png";
 import foreverBegins from "@/assets/wede/prewedding-01.jpeg";
 import theLesson from "@/assets/wede/prewedding-05.jpeg";
@@ -28,7 +26,7 @@ const MOMENTS = [
     eyebrow: "TWO CITIES, ONE VISIT",
     title: "Meeting in Person",
     text: "At the time, we lived in different cities, so meeting in person took a little while. We finally met for the first time on 2nd July 2020, when Nana Kofi came to Accra for a funeral and visited me at my house on that day and the next day , and those two days gave us our first real memories together.Then, as life sometimes does, things took an unexpected turn. We lost touch and stopped talking for a while. But apparently, our story wasn’t finished yet. 😂",
-    img: meetingInPerson,
+    video: "/gallery-videos/2020-first-visit1.mp4",
   },
   {
     year: "2021",
@@ -36,7 +34,7 @@ const MOMENTS = [
     eyebrow: "THE RECONNECTION",
     title: "Losing Touch, Finding Our Way Back",
     text: "In March 2021, almost a year later, Nana Kofi came back to Accra, and somehow, we found our way back to each other. We reconnected as friends and continued talking as though we had never lost touch in the first place. On 4th July 2021, I accompanied him to the one-year anniversary of the same funeral he had attended the year before. Little did I know that this  would become another important chapter in our story, because the very next day, 5th July 2021, Nana Kofi asked me to be his girlfriend. 🥹❤️. And just like that, the friendship that started with a WhatsApp status turned into a beautiful love story.",
-    img: losingTouch,
+    video: "/gallery-videos/2021-the-funeral-anniversary.mp4",
   },
   {
     year: "2026",
@@ -88,7 +86,17 @@ export default function StoryPage() {
               key={m.title}
             >
               <div className="moment-media">
-                {m.img ? (
+                {m.video ? (
+                  <div className="moment-frame">
+                    <video
+                      src={m.video}
+                      className="moment-video"
+                      muted
+                      controls
+                      playsInline
+                    />
+                  </div>
+                ) : m.img ? (
                   <div className="moment-frame">
                     <Image
                       src={m.img}
