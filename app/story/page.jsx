@@ -16,7 +16,7 @@ const MOMENTS = [
     tag: "The Beginning",
     eyebrow: "IN AFUA'S WORDS",
     title: "How We Met",
-    text: "It all began in 2020, right in the middle of the COVID-19 lockdown. I happened to see this very handsome gentleman on a Julia’s WhatsApp status. It was 21st May, and as fate would have it, it was also his birthday and honestly, from the moment I saw him, I just knew he was going to be my husband. 🤪😗😂.I told Julia I liked him and wanted to be his friend, so she gave me his number. Later that evening, I sent him a birthday message, introduced myself, and told him how I got his number. One conversation led to another, and before we knew it, we had our first phone call that same night.The funny thing was, it didn’t feel like I was talking to a stranger. Somehow, the conversation flowed naturally, almost as though we had known each other for years. ❤️",
+    text: "It all began in 2020, right in the middle of the COVID-19 lockdown. I happened to see this very handsome gentleman on Julia’s WhatsApp status. It was 21st May, and as fate would have it, it was also his birthday and honestly, from the moment I saw him, I just knew he was going to be my husband. 🤪😗😂.I told Julia I liked him and wanted to be his friend, so she gave me his number. Later that evening, I sent him a birthday message, introduced myself, and told him how I got his number. One conversation led to another, and before we knew it, we had our first phone call that same night.The funny thing was, it didn’t feel like I was talking to a stranger. Somehow, the conversation flowed naturally, almost as though we had known each other for years. ❤️",
     callout: "Some meetings feel written in advance.",
     img: firstMessages,
   },
