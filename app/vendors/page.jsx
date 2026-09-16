@@ -16,7 +16,20 @@ const VENDOR_CATEGORIES = [
   },
   {
     category: "Decor",
-    people: [{ name: "RK Pride", phone: "0596502248", ig: "rk_prides_" }],
+    people: [
+      { name: "RK Pride", phone: "0596502248", ig: "rk_prides_" },
+      { name: "Nayal Decor", phone: "0242601233" },
+    ],
+  },
+  {
+    category: "Graphic Design",
+    people: [
+      { name: "AD Muse", phone: "0244437912, 0574959379", ig: "adm_use" },
+    ],
+  },
+  {
+    category: "Stationeries",
+    people: [{ name: "Precept Prints", phone: "+233598990517" }],
   },
   {
     category: "Photography & Videography",
@@ -138,9 +151,15 @@ export default function VendorsPage() {
                     <div className="vendor-card-name">{p.name}</div>
                     {(p.phone || p.ig) && (
                       <div className="vendor-card-contacts">
-                        {p.phone && (
-                          <a href={telHref(p.phone)}>{p.phone}</a>
-                        )}
+                        {p.phone &&
+                          p.phone.split(",").map((num) => {
+                            const trimmed = num.trim();
+                            return (
+                              <a href={telHref(trimmed)} key={trimmed}>
+                                {trimmed}
+                              </a>
+                            );
+                          })}
                         {p.ig && (
                           <a
                             href={`https://instagram.com/${p.ig}`}
