@@ -114,6 +114,13 @@ const VENDOR_CATEGORIES = [
     category: "Bride's Photoshoot White Outfit",
     people: [{ name: "Lynden Mode", phone: "0242736011", ig: "lynden_mode" }],
   },
+  {
+    category: "Perfumes",
+    people: [
+      { name: "John and Co.", phone: "0200327966", ig: "_johnandco" },
+      { name: "Khateem", phone: "0509033479", ig: "Khateemmohammed" },
+    ],
+  },
 ];
 
 function telHref(phone) {
