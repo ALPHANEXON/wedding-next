@@ -121,6 +121,16 @@ const VENDOR_CATEGORIES = [
       { name: "Khateem", phone: "0509033479", ig: "Khateemmohammed" },
     ],
   },
+  {
+    category: "Local Bar Cocktail",
+    people: [
+      {
+        name: "Apataasi Local Bar",
+        phone: "0268246676",
+        ig: "Dils Luxury Events and juice Bar",
+      },
+    ],
+  },
 ];
 
 function telHref(phone) {
