@@ -40,7 +40,7 @@ const MOMENTS = [
     year: "2026",
     tag: "Forever Begins",
     eyebrow: "THE QUESTION",
-    title: "Yes, I'll Be Your Girlfriend",
+    title: "Yes, I'll Be Your Wife",
     text: "Five years later, we look back at that unexpected beginning and realise that what seemed like a simple birthday message was actually the start of something much bigger. Through the distance, the lost contact, the reconnection, and every moment in between, God had been writing our story in His own beautiful way. And now, five years later, here we are, not just celebrating how we met, but celebrating the love, friendship, memories, and journey that brought us here. And the best part?. This is only the beginning. ❤️🥹",
     callout: "One text can change your whole life.",
     img: foreverBegins,
