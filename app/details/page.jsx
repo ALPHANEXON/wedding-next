@@ -40,7 +40,7 @@ const EVENTS = [
         "Gentlemen, please avoid tan, blue, and black suits. Ladies can wear anything but white.",
       ],
     ],
-    actions: [{ label: "DOWNLOAD PROGRAMME", href: "#", filled: true }],
+    actions: [{ label: "DOWNLOAD PROGRAMME", href: "/programme-akoi-and-afua.pdf", download: "Programme - Akoi and Afua.pdf", filled: true }],
     ph: "tph-5",
   },
 ];
@@ -210,6 +210,7 @@ export default function DetailsPage() {
                       <a
                         key={a.label}
                         href={a.href}
+                        download={a.download}
                         className={a.filled ? "filled" : ""}
                       >
                         {a.label}
