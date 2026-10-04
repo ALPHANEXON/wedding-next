@@ -43,7 +43,7 @@ const VENDOR_CATEGORIES = [
   },
   {
     category: "Bride's Kente",
-    people: [{ name: "Aunty Evelyn", phone: "0243110765" }],
+    people: [{ name: "Sompa Clothing", phone: "0243110765" }],
   },
   {
     category: "Bride's Makeup",
@@ -80,6 +80,7 @@ const VENDOR_CATEGORIES = [
     people: [
       { name: "Elohim Catering Services", phone: "0559054095" },
       { name: "Kitchen Masters", phone: "0243384906" },
+      { name: "Lunch City Catering Service" },
     ],
   },
   {
@@ -130,6 +131,20 @@ const VENDOR_CATEGORIES = [
         ig: "Dils Luxury Events and juice Bar",
       },
     ],
+  },
+  {
+    category: "Ushering",
+    people: [
+      {
+        name: "Vel’s Ushering Agency",
+        phone: "0537650506",
+        ig: "velsusheringagency",
+      },
+    ],
+  },
+  {
+    category: "Cleaning Service",
+    people: [{ name: "Maveg Facilities Management" }],
   },
 ];
 
